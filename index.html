@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/boders.css">
+</head>
+
+<body>
+    <div class="principalDiv">
+        <header>
+            <h2>POKéMON INFO</h2>
+            <!-- <button type="button" class="cancelButton"><span class="redCircle pixel-corners">A</span>CANCEL</button> -->
+            <div class="pixel-corners--wrapper">
+                <div class="inputDiv">
+                    <input id="word_input" type="text" placeholder="BUSCAR"></input>
+                </div>
+            </div>
+        </header>
+        <div class="infoDiv">
+            <div class="resumeDiv pixel-corners">
+                <div class="resumeHeader">
+                    <p class="number">No.<span id="pok_id"><span></p>
+                    <div class="figuresDiv">
+                        <img class="figure" src="images/circle.png" alt="">
+                        <img class="figure" src="images/square.png" alt="">
+                        <img class="figure" src="images/triangle.png" alt="">
+                        <img class="figure" src="images/heart.png" alt="">
+                    </div>
+                    
+                </div>
+                <div id="image_div" class="pixel-corners imageDiv">
+
+                </div>
+                <div class="resumeName">
+                    <p id="pok_name" class="whiteText"></p>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="detailsDiv">
+                <div class="detailsDiv2 pixel-corners">
+                    <div class="headerDiv">
+                        <h3 class="whiteText">PROFILE</h3>
+                    </div>
+
+                    <div class="infoItem pixel-corners">
+                        <div class="greenHeader spaceBetween">
+                            <p class="whiteText">BE/ <span id="pok_base_experience"></span></p>
+                            <p class="whiteText">IDNo <span id="pok_order"></span></p>
+                        </div>
+                        <div class="pillInfo">
+                            <p>TYPE / <span class="pixel-corners" id="pok_type"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="headerDiv">
+                        <h3 class="whiteText">ABILITY</h3>
+                    </div>
+
+                    <div class="infoItem pixel-corners">
+                        <div class="greenHeader">
+                            <p id="pok_ability_name" class="whiteText"></p>
+                        </div>
+                        <div class="pillInfo">
+                            <p id="pok_ability"></p>
+                        </div>
+                    </div>
+
+                    <div class="headerDiv">
+                        <h3 class="whiteText">TRAINER MEMO</h3>
+                    </div>
+
+                    <div class="infoItem pixel-corners">
+                        <div class="pillInfo">
+                            <p id="pok_flavor"></p>
+                            <!-- <p>Found in <span id="pok_habitat"><span> habitat. </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
